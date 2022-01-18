@@ -1,0 +1,68 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":timezone(Asia/Tokyo)"
+  ],
+  "labels": [
+    "renovate"
+  ],
+  "schedule": [
+    "after 10pm and before 5am every weekday"
+  ],
+  "pin": {
+    "enabled": false
+  },
+  "major": {
+    "automerge": false
+  },
+  "minor": {
+    "automerge": true
+  },
+  "patch": {
+    "automerge": true
+  },
+  "docker": {
+    "automerge": false
+  },
+  "ruby-version": {
+    "automerge": false
+  },
+  "kubernetes": {
+    "automerge": false
+  },
+  "helmfile": {
+    "automerge": false
+  },
+  "js": {
+    "rangeStrategy": "update-lockfile"
+  },
+  "bundler": {
+    "rangeStrategy": "update-lockfile"
+  },
+  "packageRules": [
+    {
+      "packagePatterns": [
+        "^@types/"
+      ],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    },
+    {
+      "groupName": "linters",
+      "extends": [
+        "packages:linters"
+      ],
+      "packageNames": [
+        "prettier"
+      ],
+      "automerge": false,
+      "packagePatterns": [
+        "^@typescript-eslint/",
+        "^rubocop"
+      ]
+    }
+  ]
+}
