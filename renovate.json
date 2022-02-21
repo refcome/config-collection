@@ -8,28 +8,31 @@
   "labels": [
     "renovate"
   ],
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 5,
+  "platformAutomerge": true,
+  "automerge": true,
   "pin": {
     "enabled": false
   },
   "major": {
+    "platformAutomerge": false,
     "automerge": false
   },
-  "minor": {
-    "automerge": true
-  },
-  "patch": {
-    "automerge": true
-  },
   "docker": {
+    "platformAutomerge": false,
     "automerge": false
   },
   "ruby-version": {
+    "platformAutomerge": false,
     "automerge": false
   },
   "kubernetes": {
+    "platformAutomerge": false,
     "automerge": false
   },
   "helmfile": {
+    "platformAutomerge": false,
     "automerge": false
   },
   "js": {
@@ -43,8 +46,8 @@
       "packagePatterns": [
         "^@types/"
       ],
-      "automerge": true,
       "major": {
+        "platformAutomerge": false,
         "automerge": false
       }
     },
@@ -56,7 +59,6 @@
       "packageNames": [
         "prettier"
       ],
-      "automerge": false,
       "packagePatterns": [
         "^@typescript-eslint/",
         "^rubocop"
