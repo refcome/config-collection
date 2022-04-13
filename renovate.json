@@ -58,6 +58,13 @@
       ]
     },
     {
+      "groupName": "ruby",
+      "packagePatterns": [
+        "ruby",
+        "cimg/ruby"
+      ]
+    },
+    {
       "groupName": "froala-editor",
       "packageNames": [
         "froala-editor",
