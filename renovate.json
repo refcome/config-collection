@@ -9,7 +9,7 @@
   ],
   "schedule": ["after 10pm and before 5am every weekday", "every weekend"],
   "prHourlyLimit": 0,
-  "prConcurrentLimit": 10,
+  "prConcurrentLimit": 100,
   "platformAutomerge": true,
   "automerge": true,
   "pin": {
