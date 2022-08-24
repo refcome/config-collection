@@ -12,6 +12,7 @@
   "prConcurrentLimit": 100,
   "platformAutomerge": true,
   "automerge": true,
+  "rangeStrategy": "update-lockfile",
   "pin": {
     "enabled": false
   },
@@ -36,10 +37,8 @@
     "automerge": false
   },
   "js": {
-    "rangeStrategy": "update-lockfile"
   },
   "bundler": {
-    "rangeStrategy": "update-lockfile"
   },
   "packageRules": [
     {
